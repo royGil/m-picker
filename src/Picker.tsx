@@ -220,7 +220,7 @@ class Picker extends React.Component<IPickerProp & IPickerProps, any> {
     return passiveSupported;
   }
 
-  componentWillReceiveProps(nextProps: IPickerProp & IPickerProps) {
+  UNSAFE_componentWillReceiveProps(nextProps: IPickerProp & IPickerProps) {
     if ('selectedValue' in nextProps) {
       if (this.state.selectedValue !== nextProps.selectedValue) {
         this.setState({
