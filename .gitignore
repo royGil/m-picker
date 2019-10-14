@@ -26,6 +26,9 @@ coverage
 *.js
 *.jsx
 *.map
+!assets/*.css
+!es/*.js
+!lib/*.js
 !tests/*.js
 !/index*.js
 ios/
